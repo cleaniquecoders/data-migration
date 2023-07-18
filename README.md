@@ -23,8 +23,6 @@ You can publish the config file with:
 php artisan vendor:publish --tag="data-migration-config"
 ```
 
-## Usage
-
 Configure the connections to the database that you need to migrate from (the source) and it's destination in the `config/data-migration.php` in `connections` key.
 
 Once that completed, update the `tables` configuration in `config/data-migration.php`. This is the mapping of the data migration from source table to destination table.
@@ -33,8 +31,30 @@ Once that completed, update the `tables` configuration in `config/data-migration
 'tables' => [
     '_source_table' => 'destination_table',
     'media' => 'app_media',
-]...
+]
 ```
+
+You can set to run the Laravel migration by following setting. By default this option is disabled.
+
+```text
+DATA_MIGRATION_RUN=true
+``
+
+You may want to enable Foreign Key check as well. By default this option is disabled.
+
+```text
+DATA_MIGRATION_FK_CHECK=false
+```
+
+You also can truncate the destination table before migrating the data. By default this option is enabled.
+
+```text
+DATA_MIGRATE_TRUNCATE=true
+```
+
+## Usage
+
+> Before you run this command, please make sure you are firmed with the configuration and run the data migration in non-production environment.
 
 To start migrate, run the following command:
 
