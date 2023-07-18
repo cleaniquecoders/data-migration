@@ -6,7 +6,10 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/cleaniquecoders/data-migration.svg?style=flat-square)](https://packagist.org/packages/cleaniquecoders/data-migration)
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+
 ## Installation
+
+> At the moment, we only provide table to table migration. We are not yet implementing column mapping at this point.
 
 You can install the package via composer:
 
@@ -32,9 +35,6 @@ Once that completed, update the `tables` configuration in `config/data-migration
     'media' => 'app_media',
 ]...
 ```
-
-At the moment, we only provide table to table migration. We are not yet implementing column mapping at this point.
-
 
 To start migrate, run the following command:
 
