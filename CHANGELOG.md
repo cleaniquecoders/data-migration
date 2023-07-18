@@ -2,6 +2,12 @@
 
 All notable changes to `data-migration` will be documented in this file.
 
+## 1.0.1 - 2023-07-18
+
+- Update README
+
+**Full Changelog**: https://github.com/cleaniquecoders/data-migration/compare/1.0.0...1.0.1
+
 ## 1.0.0 - 2023-07-18
 
 ### Features
