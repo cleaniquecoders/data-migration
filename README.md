@@ -38,7 +38,7 @@ You can set to run the Laravel migration by following setting. By default this o
 
 ```text
 DATA_MIGRATION_RUN=true
-``
+```
 
 You may want to enable Foreign Key check as well. By default this option is disabled.
 
