@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands;
+namespace CleaniqueCoders\DataMigration\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Collection;
