@@ -2,9 +2,9 @@
 
 namespace CleaniqueCoders\DataMigration\Tests;
 
+use CleaniqueCoders\DataMigration\DataMigrationServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use CleaniqueCoders\DataMigration\DataMigrationServiceProvider;
 
 class TestCase extends Orchestra
 {

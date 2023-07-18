@@ -2,9 +2,9 @@
 
 namespace CleaniqueCoders\DataMigration;
 
+use CleaniqueCoders\DataMigration\Commands\DataMigrationCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use CleaniqueCoders\DataMigration\Commands\DataMigrationCommand;
 
 class DataMigrationServiceProvider extends PackageServiceProvider
 {
