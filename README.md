@@ -9,7 +9,7 @@ This package allows data migration from one source to another.
 
 ## Installation
 
-> At the moment, we only provide table to table migration. We are not yet implementing column mapping at this point.
+> At the moment, we only provide table-to-table migration. We are not yet implementing column mapping, or data transformation at this point in time.
 
 You can install the package via composer:
 
