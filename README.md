@@ -59,13 +59,13 @@ DATA_MIGRATE_TRUNCATE=true
 To start migrate, run the following command:
 
 ```bash
-php artisan migrate mysql pgsql
+php artisan data:migrate mysql pgsql
 ```
 
 By default, the migration will query by chunk of 100. If you need to increase the numbers, you can provide the option:
 
 ```bash
-php artisan migrate mysql pgsql --chunk=1000
+php artisan data:migrate mysql pgsql --chunk=1000
 ```
 
 > By increasing the chunk, it might impact the performance of the migration.
