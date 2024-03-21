@@ -1,68 +1,68 @@
 {
-    "name": "cleaniquecoders/data-migration",
-    "description": "This package allows data migration from one source to another",
-    "keywords": [
-        "cleaniquecoders",
-        "laravel",
-        "data-migration"
-    ],
-    "homepage": "https://github.com/cleaniquecoders/data-migration",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Nasrul Hazim Bin Mohamad",
-            "email": "nasrulhazim.m@gmail.com",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "php": "^8.1",
-        "spatie/laravel-package-tools": "^1.14.0",
-        "illuminate/contracts": "^10.0"
-    },
-    "require-dev": {
-        "laravel/pint": "^1.0",
-        "nunomaduro/collision": "^7.9",
-        "orchestra/testbench": "^8.0",
-        "pestphp/pest": "^2.0",
-        "pestphp/pest-plugin-arch": "^2.0",
-        "pestphp/pest-plugin-laravel": "^2.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "CleaniqueCoders\\DataMigration\\": "src/",
-            "CleaniqueCoders\\DataMigration\\Database\\Factories\\": "database/factories/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "CleaniqueCoders\\DataMigration\\Tests\\": "tests/"
-        }
-    },
-    "scripts": {
-        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
-        "analyse": "vendor/bin/phpstan analyse",
-        "test": "vendor/bin/pest",
-        "test-coverage": "vendor/bin/pest --coverage",
-        "format": "vendor/bin/pint"
-    },
-    "config": {
-        "sort-packages": true,
-        "allow-plugins": {
-            "pestphp/pest-plugin": true,
-            "phpstan/extension-installer": true
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "CleaniqueCoders\\DataMigration\\DataMigrationServiceProvider"
-            ],
-            "aliases": {
-                "DataMigration": "CleaniqueCoders\\DataMigration\\Facades\\DataMigration"
-            }
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+	"name": "cleaniquecoders/data-migration",
+	"description": "This package allows data migration from one source to another",
+	"keywords": [
+		"cleaniquecoders",
+		"laravel",
+		"data-migration"
+	],
+	"homepage": "https://github.com/cleaniquecoders/data-migration",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Nasrul Hazim Bin Mohamad",
+			"email": "nasrulhazim.m@gmail.com",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": "^8.1 | ^8.2 | ^8.3",
+		"spatie/laravel-package-tools": "^1.14.0",
+		"illuminate/contracts": "^10.0 | ^11.0"
+	},
+	"require-dev": {
+		"laravel/pint": "^1.0",
+		"nunomaduro/collision": "^7.9",
+		"orchestra/testbench": "^8.0 | ^9.0",
+		"pestphp/pest": "^2.0",
+		"pestphp/pest-plugin-arch": "^2.0",
+		"pestphp/pest-plugin-laravel": "^2.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"CleaniqueCoders\\DataMigration\\": "src/",
+			"CleaniqueCoders\\DataMigration\\Database\\Factories\\": "database/factories/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"CleaniqueCoders\\DataMigration\\Tests\\": "tests/"
+		}
+	},
+	"scripts": {
+		"post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+		"analyse": "vendor/bin/phpstan analyse",
+		"test": "vendor/bin/pest",
+		"test-coverage": "vendor/bin/pest --coverage",
+		"format": "vendor/bin/pint"
+	},
+	"config": {
+		"sort-packages": true,
+		"allow-plugins": {
+			"pestphp/pest-plugin": true,
+			"phpstan/extension-installer": true
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"CleaniqueCoders\\DataMigration\\DataMigrationServiceProvider"
+			],
+			"aliases": {
+				"DataMigration": "CleaniqueCoders\\DataMigration\\Facades\\DataMigration"
+			}
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
 }
